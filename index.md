@@ -18,16 +18,20 @@ permalink: /
   <div class="container">
     <div class="row stagger text-center">
       <div class="col-md-6 mb-4 fade-in">
-        <div class="project-card h-100">
-          <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
-          <h3 class="h4">Projects</h3>
-        </div>
+        <a href="/projects/" class="text-decoration-none">
+          <div class="project-card h-100">
+            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+            <h3 class="h4">Projects</h3>
+          </div>
+        </a>
       </div>
       <div class="col-md-6 mb-4 fade-in">
-        <div class="project-card h-100">
-          <i class="bi bi-puzzle-piece display-4 text-success mb-3"></i>
-          <h3 class="h4">Puzzles!</h3>
-        </div>
+        <a href="/puzzles/" class="text-decoration-none">
+          <div class="project-card h-100">
+            <i class="bi bi-puzzle-piece display-4 text-success mb-3"></i>
+            <h3 class="h4">Puzzles</h3>
+          </div>
+        </a>
       </div>
     </div>
   </div>
