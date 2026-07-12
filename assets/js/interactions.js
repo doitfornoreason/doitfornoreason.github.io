@@ -77,3 +77,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 });
+
+// ===== Dark Mode Toggle =====
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('dark-mode-toggle');
+  const icon = toggleBtn?.querySelector('i');
+  const html = document.documentElement;
+
+  // Get saved theme or system preference
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+  // Apply theme
+  html.setAttribute('data-theme', theme);
+  if (icon) {
+    icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+  }
+
+  // Toggle on click
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      if (icon) {
+        icon.className = next === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+      }
+    });
+  }
+});

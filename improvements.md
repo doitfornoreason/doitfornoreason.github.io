@@ -1,0 +1,15 @@
+- change the header from welcome to my world to welcome to my blog
+- remove the where curiosity meets creativity ,....
+- page cards in the home page:
+	- remove descriptions
+	- change code experiments label to projects
+	- change puzzle design label to "puzzles!"
+	- remove creative projects card
+
+- project page:
+	- remove all except one project cards for now, I will add them later.
+	- for the remaining project card, change the name to "Feynman-Kac Connections"
+	- the tag for this remaining project should be numerical methods and Financial mathematics
+- puzzles page: 
+	- remove description under heading
+	- remove all puzzle cards

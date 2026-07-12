@@ -78,7 +78,7 @@
 
 .skill-bar {
   height: 8px;
-  background: #e2e8f0;
+  background: var(--skill-bar-bg, #e2e8f0);
   border-radius: 4px;
   overflow: hidden;
 }

@@ -57,7 +57,7 @@ permalink: /about/
 
 <style>
 .skill-bar {
-  background: #e2e8f0;
+  background: var(--skill-bar-bg);
   border-radius: 999px;
   height: 8px;
   overflow: hidden;
