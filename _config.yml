@@ -1,13 +1,15 @@
 theme: minima
 title: Doitforonoreason's homepage
-description: Where I occasinally post thoughts
-
-header_pages:
-  - index.md
-  - projects.md
-  - puzzles.md
-  - about.md
+description: Where I occasionally post thoughts
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Default layout for all pages
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
