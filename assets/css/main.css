@@ -1,0 +1,21 @@
+/* Interactions & Animations */
+
+/* Icon Styles */
+.icons i {
+  font-size: 2rem;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+/* Scroll Effects */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
