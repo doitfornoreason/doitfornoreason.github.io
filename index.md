@@ -28,7 +28,7 @@ permalink: /
       <div class="col-md-6 mb-4 fade-in">
         <a href="/puzzles/" class="text-decoration-none">
           <div class="project-card h-100">
-            <i class="bi bi-puzzle-piece display-4 text-success mb-3"></i>
+            <i class="bi bi-puzzle display-4 text-success mb-3"></i>
             <h3 class="h4">Puzzles</h3>
           </div>
         </a>

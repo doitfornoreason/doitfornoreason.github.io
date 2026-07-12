@@ -36,10 +36,9 @@ html[data-theme="dark"] {
   --skill-bar-bg: #334155;
 }
 
-/* Smooth theme transition */
-*,
-*::before,
-*::after {
+/* Smooth theme transition – scoped to avoid breaking Bootstrap */
+body, .site-header, .project-card, .hero-section, .site-footer,
+.btn, .btn-primary, .btn-outline-primary, .badge, .nav-links {
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
@@ -259,10 +258,14 @@ html[data-theme="dark"] .site-header.scrolled {
 
 /* ===== Footer ===== */
 .site-footer {
-  background: var(--text);
-  color: white;
+  background: #1f2937;
+  color: #e2e8f0;
   padding: 2rem 0;
   margin-top: 4rem;
+}
+html[data-theme="dark"] .site-footer {
+  background: #0f172a;
+  color: #94a3b8;
 }
 .site-footer a {
   color: rgba(255, 255, 255, 0.8);
@@ -281,6 +284,56 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* ===== Dark Mode Bootstrap Overrides ===== */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] .display-4,
+html[data-theme="dark"] .lead {
+  color: var(--text);
+}
+
+html[data-theme="dark"] .text-primary {
+  color: var(--primary) !important;
+}
+html[data-theme="dark"] .text-success {
+  color: var(--secondary) !important;
+}
+html[data-theme="dark"] .text-muted {
+  color: var(--text-light) !important;
+}
+
+html[data-theme="dark"] .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #0f172a;
+}
+html[data-theme="dark"] .btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+html[data-theme="dark"] .btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+html[data-theme="dark"] .btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: #0f172a;
+}
+
+/* Badge dark mode */
+html[data-theme="dark"] .badge.bg-light {
+  background-color: var(--bg-alt) !important;
+  color: var(--text) !important;
+}
+html[data-theme="dark"] .badge.text-dark {
+  color: var(--text) !important;
 }
 
 /* ===== Responsive ===== */
