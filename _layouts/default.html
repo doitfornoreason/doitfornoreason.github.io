@@ -4,7 +4,9 @@
   <body class="sticky-header">
     {% include header.html %}
     {% include scroll-progress.html %}
-    {{ content }}
+    <main class="main-content">
+      {{ content }}
+    </main>
     {% include footer.html %}
     {% if site.google_analytics %}
       {% include google-analytics.html %}

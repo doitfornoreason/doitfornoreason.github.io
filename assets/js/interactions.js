@@ -84,16 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const icon = toggleBtn?.querySelector('i');
   const html = document.documentElement;
 
-  // Get saved theme or system preference
-  const savedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-
-  // Apply theme
-  html.setAttribute('data-theme', theme);
-  html.setAttribute('data-bs-theme', theme);
+  // Sync icon with current theme (already set by head script)
+  const currentTheme = html.getAttribute('data-theme') || 'light';
   if (icon) {
-    icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+    icon.className = currentTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
   }
 
   // Toggle on click

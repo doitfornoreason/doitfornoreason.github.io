@@ -46,6 +46,8 @@ body, .site-header, .project-card, .hero-section, .site-footer,
 /* ===== Base ===== */
 html {
   font-size: 12px;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 body {
@@ -54,6 +56,14 @@ body {
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -359,7 +369,7 @@ html[data-theme="dark"] .ongoing-badge::before {
   background: #1f2937;
   color: #e2e8f0;
   padding: 2rem 0;
-  margin-top: 4rem;
+  margin-top: auto;
 }
 html[data-theme="dark"] .site-footer {
   background: #0f172a;
