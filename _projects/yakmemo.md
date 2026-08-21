@@ -2,6 +2,7 @@
 title: "Yak-memo"
 description: "Lightweight flashcard system with customisable spaced repetition algorithms"
 icon: "bi-card-heading"
+icon_color: "#6366f1"
 tags:
   - Personalised tools
   - Machine learning

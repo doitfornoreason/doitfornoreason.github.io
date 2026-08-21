@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Projects"
-permalink: /projects/
+title: "Cool Stuff"
+permalink: /cool-stuff/
 ---
 
-<section class="projects-section" data-section-name="projects">
+<section class="projects-section" data-section-name="cool-stuff">
   <div class="container">
-    <h1 class="display-4 fw-bold mb-4 fade-in">Projects</h1>
+    <h1 class="display-4 fw-bold mb-4 fade-in">Cool Stuff</h1>
 
     <div class="row stagger">
       {% for project in site.projects %}
@@ -16,8 +16,8 @@ permalink: /projects/
               {% if project.ongoing or project.status == 'ongoing' %}
                 <span class="ongoing-badge">ongoing work</span>
               {% endif %}
-              <div class="card-icon mb-3">
-                <i class="bi {{ project.icon | default: 'bi-folder' }} display-4 text-primary"></i>
+              <div class="card-icon mb-2">
+                <i class="bi {{ project.icon | default: 'bi-folder' }}" style="color: {{ project.icon_color | default: 'var(--primary)' }};"></i>
               </div>
               <h3 class="h5 fw-bold">{{ project.title }}</h3>
               {% if project.description %}
@@ -35,7 +35,7 @@ permalink: /projects/
         </div>
       {% else %}
         <div class="col-12 text-center py-5">
-          <p class="lead text-muted">Projects coming soon!</p>
+          <p class="lead text-muted">Cool stuff coming soon!</p>
         </div>
       {% endfor %}
     </div>

@@ -9,10 +9,7 @@ plugins:
 collections:
   projects:
     output: true
-    permalink: /projects/:name/
-  puzzles:
-    output: true
-    permalink: /puzzles/:name/
+    permalink: /cool-stuff/:name/
 
 # Default layout for all pages
 defaults:
@@ -25,8 +22,3 @@ defaults:
       type: "projects"
     values:
       layout: project
-  - scope:
-      path: ""
-      type: "puzzles"
-    values:
-      layout: puzzle

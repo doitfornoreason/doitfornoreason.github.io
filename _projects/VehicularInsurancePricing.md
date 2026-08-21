@@ -2,6 +2,7 @@
 title: "Vehicular Insurance Pricing"
 description: "Predictive modeling and risk assessment for vehicle insurance pricing."
 icon: "bi-shield-check"
+icon_color: "#10b981"
 tags:
   - machine learning
   - actuarial science

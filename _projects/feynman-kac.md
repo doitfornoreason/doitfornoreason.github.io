@@ -2,6 +2,7 @@
 title: "Feynman-Kac Connections"
 description: "Exploring connections between stochastic processes and partial differential equations."
 icon: "bi-calculator"
+icon_color: "#f59e0b"
 tags:
   - numerical methods
   - Financial mathematics
