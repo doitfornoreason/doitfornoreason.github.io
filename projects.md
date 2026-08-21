@@ -9,19 +9,35 @@ permalink: /projects/
     <h1 class="display-4 fw-bold mb-4 fade-in">Projects</h1>
 
     <div class="row stagger">
-      <div class="col-md-6 col-lg-4 mb-4 fade-in">
-        <div class="project-card">
-          <div class="card-icon mb-3">
-            <i class="bi bi-calculator display-4 text-primary"></i>
-          </div>
-          <h3 class="h5 fw-bold">Feynman-Kac Connections</h3>
-          <p class="text-muted">Exploring connections between stochastic processes and partial differential equations.</p>
-          <div class="card-tags">
-            <span class="badge bg-light text-dark me-1">numerical methods</span>
-            <span class="badge bg-light text-dark">Financial mathematics</span>
-          </div>
+      {% for project in site.projects %}
+        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+          <a href="{{ project.url | relative_url }}" class="text-decoration-none">
+            <div class="project-card h-100 position-relative">
+              {% if project.ongoing or project.status == 'ongoing' %}
+                <span class="ongoing-badge">ongoing work</span>
+              {% endif %}
+              <div class="card-icon mb-3">
+                <i class="bi {{ project.icon | default: 'bi-folder' }} display-4 text-primary"></i>
+              </div>
+              <h3 class="h5 fw-bold">{{ project.title }}</h3>
+              {% if project.description %}
+                <p class="text-muted">{{ project.description }}</p>
+              {% endif %}
+              {% if project.tags %}
+                <div class="card-tags">
+                  {% for tag in project.tags %}
+                    <span class="badge bg-light text-dark me-1">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </a>
         </div>
-      </div>
+      {% else %}
+        <div class="col-12 text-center py-5">
+          <p class="lead text-muted">Projects coming soon!</p>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>

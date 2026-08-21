@@ -6,10 +6,27 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  puzzles:
+    output: true
+    permalink: /puzzles/:name/
+
 # Default layout for all pages
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: default
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: "puzzles"
+    values:
+      layout: puzzle
