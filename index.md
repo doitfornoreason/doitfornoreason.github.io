@@ -14,7 +14,7 @@ permalink: /
   <div class="container">
     <div class="intro-content mx-auto fade-in" style="max-width: 760px;">
       <p>
-        Welcome to my personal site. Here I share software projects, explore mathematical puzzles, and post notes and ideas.
+        Welcome to my site, this is a passion project and certainly work in progress!
       </p>
     </div>
   </div>

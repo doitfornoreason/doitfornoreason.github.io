@@ -22,7 +22,7 @@ permalink: /about/
     font-family: monospace;
   }
 </style>
-
+<!-- 
 <pre><code>
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠠⢂⠠⢈⠂⠍⢨⠁⡞⢀⣿⠳⣗⢯⡾⢭⣳⢻⡞⡬⢇⠳⣉⢆⡹⠌⢎⡱⢊⠴⢁⠎⢡⠑⣊⣹⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡗⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠐⠠⠀⢊⠀⠇⢌⠣⣌⠳⡌⢧⡹⢣⠇⣥⢺⡙⣌⠲⢁⠦⠰⡉⢆⠡⢊⠔⡡⠘⠄⡰⠜⡸⢟⣿⣿
@@ -55,14 +55,18 @@ permalink: /about/
 ⠀⠀⠑⢬⡀⠀⠀⠀⠀⠠⠀⠀⠀⠄⠱⣮⠫⣳⣿⣿⣿⣿⣶⣧⡈⢿⣿⣸⠗⣶⡀⢻⣿⣭⣧⣹⣿⣧⣽⠛⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡵⣫⣿⡳⢼
 ⠆⠈⠀⠀⠁⡆⠀⠀⠀⠀⠀⢀⣴⠃⠂⠘⣿⣿⢽⣿⣟⣿⣿⣝⣿⣶⣎⣴⢧⣽⡷⣼⡙⢿⣿⣿⡌⢹⣛⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⠏⠐⢻
 ⢞⡐⣧⡀⢰⠀⠀⠀⠀⠰⣾⡏⣸⡆⠀⠀⠙⢡⣾⣥⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣻⣿⣮⢿⣿⣧⡾⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡃⣍⠠⡈⠐
-</code></pre>
+</code></pre> 
 
-<hr>
+<hr> -->
 <p style="margin-bottom: 30px;" class="lead fade-in">
-    As of Auguest 2026, I am an Honours year student at UniMelb studying Maths and Actuarial Science. Within Maths, I am majoring in Statistics/Stochastic processes (this is a single specialisation) and Pure mathematics. After all, I am spending 5 years at uni, so I get to enjoy a nice breadth in my studies :)</p>
-<p class="lead fade-in">
+    Hi!</p>
+<p style="margin-bottom: 30px;" class="lead fade-in">
+    I'm an Honours year student studying Maths and Actuarial Science. My interests lie in stochastic modelling, machine learning, financial modelling and pricing (this is not an exhaustive list, just a few things I'm happy to have a conversation about)</p>
+<!-- <p style="margin-bottom: 30px;" class="lead fade-in">
+  </p> -->
+<!-- <p class="lead fade-in">
     This website was created with AI assistance. I certainly dont have any special skills in web development, but with the new agentic coding advancements, the barrier of entry has lowered <em> <u> alot </u> </em> (Well, this goes for everything).</p>
 <p class="lead fade-in">
-    Now although the creation of this website was heavily assisted by AI, I can assure you that all the content was written by a human! I'm quite grateful to these advancements in AI tools, but I'm still old fashioned in the way I believe that the expression of passion is meant to be a human-to-human connection, and the purpose of this site is exactly that; an expression of my passions and interests.</p>
+    Now although the creation of this website was heavily assisted by AI, I can assure you that all the content was written by a human! I'm quite grateful to these advancements in AI tools, but I'm still old fashioned in the way I believe that the expression of passion is meant to be a human-to-human connection, and the purpose of this site is exactly that; an expression of my passions and interests.</p> -->
 </div>
 </section>
