@@ -196,3 +196,80 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// ===== Rock Paper Scissors Game =====
+document.addEventListener('DOMContentLoaded', () => {
+  const section = document.querySelector('.rps-section');
+  if (!section) return;
+
+  const MOVES = ['rock', 'paper', 'scissors'];
+  const ICONS = { rock: 'O', paper: '||', scissors: '-<' };
+  const NAMES = { rock: 'Rock', paper: 'Paper', scissors: 'Scissors' };
+  const BEATS = { rock: 'scissors', paper: 'rock', scissors: 'paper' };
+
+  const playerHand = section.querySelector('#rps-player-hand');
+  const computerHand = section.querySelector('#rps-computer-hand');
+  const resultEl = section.querySelector('#rps-result');
+  const scoreEls = {
+    player: section.querySelector('#rps-score-player'),
+    draws: section.querySelector('#rps-score-draws'),
+    computer: section.querySelector('#rps-score-computer')
+  };
+  const resetBtn = section.querySelector('#rps-reset');
+  const score = { player: 0, computer: 0, draws: 0 };
+
+  section.querySelectorAll('.rps-choice').forEach(btn => {
+    btn.addEventListener('click', () => playRound(btn.dataset.move));
+  });
+
+  resetBtn.addEventListener('click', resetGame);
+
+  function playRound(playerMove) {
+    const computerMove = MOVES[Math.floor(Math.random() * MOVES.length)];
+
+    setHand(playerHand, playerMove);
+    setHand(computerHand, computerMove);
+
+    if (playerMove === computerMove) {
+      score.draws++;
+      setResult(`Both played ${NAMES[playerMove].toLowerCase()} — it's a draw!`, 'draw');
+    } else if (BEATS[playerMove] === computerMove) {
+      score.player++;
+      setResult(`${NAMES[playerMove]} beats ${NAMES[computerMove].toLowerCase()} — you win!`, 'win');
+    } else {
+      score.computer++;
+      setResult(`${NAMES[computerMove]} beats ${NAMES[playerMove].toLowerCase()} — computer wins.`, 'lose');
+    }
+
+    Object.keys(scoreEls).forEach(key => {
+      scoreEls[key].textContent = score[key];
+    });
+    resetBtn.hidden = false;
+  }
+
+  function setHand(el, move) {
+    el.textContent = ICONS[move];
+    el.classList.remove('pop');
+    void el.offsetWidth; // restart the pop animation
+    el.classList.add('pop');
+  }
+
+  function setResult(message, outcome) {
+    resultEl.textContent = message;
+    resultEl.className = `rps-result ${outcome}`;
+  }
+
+  function resetGame() {
+    score.player = score.computer = score.draws = 0;
+    Object.keys(scoreEls).forEach(key => {
+      scoreEls[key].textContent = '0';
+    });
+    playerHand.textContent = '?';
+    computerHand.textContent = '?';
+    playerHand.classList.remove('pop');
+    computerHand.classList.remove('pop');
+    resultEl.textContent = 'Make your move!';
+    resultEl.className = 'rps-result';
+    resetBtn.hidden = true;
+  }
+});

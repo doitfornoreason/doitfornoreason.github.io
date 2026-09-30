@@ -611,3 +611,150 @@ html[data-theme="dark"] .carousel-control:hover {
     display: block;
   }
 }
+
+/* ===== Rock Paper Scissors Game ===== */
+.rps-section .rps-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.rps-section .rps-title {
+  color: var(--text);
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+.rps-choices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.rps-choice {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  min-width: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.rps-choice:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px -4px rgba(0, 0, 0, 0.15);
+}
+.rps-choice:active {
+  transform: translateY(-1px);
+}
+.rps-choice .rps-icon {
+  font-size: 2rem;
+  line-height: 1;
+  font-family: var(--bs-font-monospace, monospace);
+  font-weight: 700;
+}
+.rps-choice .rps-move-name {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+.rps-choice:hover .rps-move-name {
+  color: var(--primary);
+}
+
+.rps-arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.rps-hand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+.rps-hand-icon {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  min-height: 1.2em;
+  font-family: var(--bs-font-monospace, monospace);
+  font-weight: 700;
+}
+.rps-hand-icon.pop {
+  animation: rpsPop 0.35s ease;
+}
+@keyframes rpsPop {
+  0% { transform: scale(0.6); }
+  60% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+.rps-hand-name {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.rps-vs {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.rps-result {
+  min-height: 1.6em;
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+.rps-result.win { color: var(--secondary); }
+.rps-result.lose { color: #ef4444; }
+.rps-result.draw { color: var(--accent); }
+
+.rps-score {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.rps-score strong {
+  color: var(--text);
+  margin-left: 0.35rem;
+}
+
+.rps-reset {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 1rem;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.rps-reset:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .rps-arena {
+    gap: 1.25rem;
+  }
+  .rps-hand-icon {
+    font-size: 2.6rem;
+  }
+  .rps-choice {
+    min-width: 84px;
+    padding: 0.6rem 1rem;
+  }
+}
