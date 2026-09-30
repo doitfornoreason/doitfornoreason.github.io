@@ -14,7 +14,7 @@ permalink: /
   <div class="container">
     <div class="intro-content mx-auto fade-in" style="max-width: 760px;">
       <p>
-        Welcome to my site, this is a passion project and certainly work in progress!
+        Welcome to my site, this is a passion project and work in progress!
       </p>
     </div>
   </div>

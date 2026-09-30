@@ -8,6 +8,7 @@ tags:
   - Financial mathematics
 date: 2026-08-21
 ongoing: true
+published: false
 ---
 
 Although fundamental topics in derivatives pricing are motivated through a more stochastic process-y focused viewpoint, PDE's pop out (just as in most applications) very quickly (eg: Black Scholes model). A key link between PDE's and stochastic processes; the [Feynman-Kac formula](https://en.wikipedia.org/wiki/Feynman%E2%80%93Kac_formula) is often quoted in Financial Mathematics.
