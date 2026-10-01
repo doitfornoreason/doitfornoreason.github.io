@@ -9,6 +9,7 @@ tags:
   - financial mathematics
 date: 2026-06-01
 ongoing: false
+published: false
 ---
 
 # TL;DR
