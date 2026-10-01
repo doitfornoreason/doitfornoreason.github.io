@@ -22,3 +22,13 @@
 <link rel="stylesheet" href="{{ '/assets/css/modern.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/animations.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/interactions.css' | relative_url }}">
+<!-- MathJax: LaTeX math rendering (kramdown math_engine: mathjax) -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
