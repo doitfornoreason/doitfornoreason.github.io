@@ -61,7 +61,7 @@ permalink: /about/
 <p style="margin-bottom: 30px;" class="lead fade-in">
     Hi!</p>
 <p style="margin-bottom: 30px;" class="lead fade-in">
-    I'm an Honours year student studying Maths and Actuarial Science. My interests lie in stochastic modelling, machine learning, financial modelling and pricing (this is not an exhaustive list, just a few things I'm happy to have a conversation about)</p>
+    I'm an Honours year student studying Maths (Stats & Pure major) and Actuarial Science. My interests lie in stochastic modelling, machine learning, financial modelling and pricing (this is not an exhaustive list, just a few things I'm happy to have a conversation about)</p>
 <!-- <p style="margin-bottom: 30px;" class="lead fade-in">
   </p> -->
 <!-- <p class="lead fade-in">
