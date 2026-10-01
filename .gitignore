@@ -26,3 +26,6 @@ WEBSITE_GUIDE.pdf
 
 # Obsidian logs
 .obsidian/
+
+# Locally symlinked project dirs
+pricing project
